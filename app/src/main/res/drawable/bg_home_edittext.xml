@@ -3,5 +3,6 @@
        android:shape="rectangle"
 >
     <corners android:radius="6dp"/>
-    <solid android:color="@color/white"/>
+    <solid android:color="@color/result_image_border"/>
+    <!--  应该是white-->
 </shape>
