@@ -24,9 +24,8 @@ import com.youdu.widget.adbrowser.Base64Drawables;
 import com.youdu.widget.adbrowser.BrowserWebView;
 
 /**
- * @author: qndroid
- * @function: 广告WebView页面
- * @date: 16/7/5
+ * Created by 包子 on 2018/4/7
+ * Function 广告WebView页面
  */
 public final class AdBrowserActivity extends Activity {
 

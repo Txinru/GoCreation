@@ -24,7 +24,7 @@ import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 
 /**
- * @author qndroid
+ * Created by 包子
  */
 public class Utils {
 

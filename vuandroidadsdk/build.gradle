@@ -1,7 +1,8 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'realm-android'
 android {
     compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
 
 
@@ -14,7 +15,13 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+    dexOptions {
+        jumboMode = true
+    }
 
+    lintOptions {
+        abortOnError false
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -31,4 +38,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.3.0' //okttp依赖
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }
